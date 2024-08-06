@@ -1,0 +1,84 @@
+---
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ronak Hingonia</title>
+    <meta content="Full Stack Developer" name="description" />
+    <meta content="Ronak Hingonia" property="og:title" />
+    <meta content="Full Stack Developer" property="og:description" />
+    <meta content="/z11.jpg" property="og:image" />
+    <meta content="Ronak Hingonia" property="twitter:title" />
+    <meta content="Full Stack Developer" property="twitter:description" />
+    <meta content="/z11.jpg" property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link
+      href="https://uploads-ssl.webflow.com/5c58d24c0c3ff625822bee4b/5cf313c0ee1b52e4ac9824db_FavIcon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://uploads-ssl.webflow.com/5c58d24c0c3ff625822bee4b/5cf2fa0b73a6234b00b23af3_Webclip.png"
+      rel="apple-touch-icon"
+    /> -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+            "Roboto:100,300,regular,500,700,900:greek,latin",
+          ],
+        },
+      });
+    </script>
+  </head>
+  <Header />
+  <slot />
+</html>
+
+<style is:global>
+  body {
+    background-color: hsla(180, 1%, 97%, 1);
+    background-image: radial-gradient(
+        at 81% 65%,
+        hsla(218, 98%, 94%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 95% 99%, hsla(39, 95%, 94%, 1) 0px, transparent 50%),
+      radial-gradient(at 48% 26%, hsla(271, 77%, 94%, 1) 0px, transparent 50%),
+      radial-gradient(at 75% 26%, hsla(197, 87%, 94%, 1) 0px, transparent 50%);
+    background-size: 500% 500%;
+    animation: gradient 9s ease infinite;
+    height: 100vh;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
