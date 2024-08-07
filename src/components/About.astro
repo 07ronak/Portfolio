@@ -2,18 +2,105 @@
 
 ---
 
-<div id="about" class="grid">
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime molestiae
-    repellat fugiat, vero assumenda ea reiciendis dignissimos qui eaque
-    deserunt, aperiam explicabo quia facilis quaerat accusamus illum cum numquam
-    minus voluptates quidem. Minima, excepturi, esse corporis doloribus totam
-    autem nihil qui iure quae corrupti sint eum adipisci impedit rem provident
-    sit! Corporis, repellat in dignissimos reprehenderit at quibusdam
-    necessitatibus assumenda, explicabo facere numquam dolorum maiores aliquid
-    deserunt soluta, libero perferendis voluptatibus rerum beatae. Natus, eaque
-    facilis! Ratione suscipit enim quis, blanditiis ex illum adipisci, eum sint
-    nemo vero, dolor odit veritatis esse? A voluptate minus labore. Beatae
-    asperiores itaque tenetur.
-  </p>
+<div class="pr-20 pl-1">
+  <div class="flex justify-between">
+    <div
+      id="about"
+      class="flex w-4/5 flex-col justify-between p-4 leading-normal"
+    >
+      <h5 class="mb-2 text-2xl font-bold tracking-tight">Hi,</h5>
+      <p class="mb-3 text-gray-600">
+        I'm Ronak Hingonia, a curious software engineer from Jaipur, India. <p
+          class="text-gray-500 mb-3"
+        >
+          In a world driven by constant change, I am energized by new
+          technologies, constantly seeking to understand and contribute to their
+          potential.💪🏻
+        </p>
+        <p class="mb-2">
+          My primary tools of choice includes:
+          <ul class="list-disc pl-5">
+            <li>Java (DSA)</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Astro</li>
+            <li>Nodejs</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <!-- <li>Tailwind</li> -->
+          </ul>
+        </p>
+        <!--  <p class="text-gray-500 mb-3">
+          Alongside development, I have a strong interest in Computer & Network
+          Security.🌐
+        </p> -->
+      </p>
+    </div>
+    <div
+      id="now"
+      class="w-1/4 border border-gray-500 rounded-lg shadow-sm mt-8 p-5 ml-16 h-40"
+    >
+      <div class="flex items-center justify-between mb-2">
+        <p class="font-normal text-gray-600">Now</p>
+        <div class="relative inline-flex">
+          <span
+            class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75"
+          ></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+          ></span>
+        </div>
+      </div>
+      <p class="text-gray-400 mb-3" style="font-size: 9px">What's that?</p>
+      <p class="text-xs text-gray-500">Currently, working on React Project</p>
+    </div>
+  </div>
+  <div
+    id="education"
+    class="h-40 w-full border-gray-300 rounded-lg shadow-sm border ml-4 flex justify-between mt-2"
+  >
+    <div class="p-5">
+      <h5 class="mb-2 text-xl text-black opacity-90 tracking-tight">
+        Indian Institute of Technology Gandhinagar <span
+          style="font-size: 10px"
+          class="text-gray-500 mt-4">(2020-2024)</span
+        >
+      </h5>
+      <p style="font-size: 9px">|</p>
+      <p style="font-size: 9px">
+        |__ __<span class="text-sm text-gray-500"
+          >Material Science and Engineering (majors)</span
+        >
+      </p>
+      <p style="font-size: 9px">|</p>
+      <p style="font-size: 9px">
+        |__ __<span class="text-sm text-gray-500"
+          >Computer Science and Engineering (minors)</span
+        >
+      </p>
+    </div>
+    <div id="logo" class="flex justify-center items-center">
+      <img src="/Logo.svg" alt="IIT-GN Logo" class="object-cover w-48" />
+    </div>
+  </div>
 </div>
+<style>
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #4ade80;
+    }
+    50% {
+      box-shadow: 0 0 20px #4ade80;
+    }
+    100% {
+      box-shadow: 0 0 5px #4ade80;
+    }
+  }
+  .glow-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #4ade80;
+    border-radius: 50%;
+    animation: glow 2s infinite;
+  }
+</style>
