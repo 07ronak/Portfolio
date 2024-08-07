@@ -7,6 +7,7 @@ export default {
         montserrat: ['"Montserrat"', "sans-serif"],
         opensans: ['"Open Sans"', "sans-serif"],
         roboto: ['"Roboto"', "sans-serif"],
+        kalam: ['"Kalam"', "cursive"],
       },
     },
   },
