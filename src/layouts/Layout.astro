@@ -1,5 +1,7 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import StylishFooter from "../components/StylishFooter";
 import Home from "./Home.astro";
 ---
 
@@ -64,6 +66,7 @@ import Home from "./Home.astro";
   </head>
   <Header />
   <slot />
+  <StylishFooter client:load />
 </html>
 
 <style is:global>
