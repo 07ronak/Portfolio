@@ -2,7 +2,9 @@
 
 ---
 
+<hr />
 <div
+  id="home"
   class="container mx-auto px-4 mt-12 md:mt-24 flex flex-col md:flex-row justify-between items-center mb-52"
 >
   <div class="space-y-2 mb-8 md:mb-0">
@@ -44,6 +46,7 @@
     />
   </div>
 </div>
+<div class="hidden"></div>
 <style>
   .company {
     background-image: linear-gradient(214deg, #ff285c, #b010fb);
@@ -56,5 +59,37 @@
     max-width: 30rem;
     height: auto;
     clip-path: circle();
+  }
+  @media screen and (max-width: 639px) {
+    #scrollingImage {
+      display: none;
+    }
+    hr {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 639px) and (min-height: 740px) {
+    .hidden {
+      height: 4vh;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 639px) and (min-height: 844px) {
+    .hidden {
+      height: 16vh;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 639px) and (min-height: 896px) {
+    .hidden {
+      height: 18vh;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 639px) and (min-height: 932px) {
+    .hidden {
+      height: 20vh;
+      display: block;
+    }
   }
 </style>
