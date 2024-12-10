@@ -48,6 +48,12 @@
 </div>
 <div class="hidden"></div>
 <style>
+  .content {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
   .company {
     background-image: linear-gradient(214deg, #ff285c, #b010fb);
     -webkit-background-clip: text;
@@ -55,15 +61,11 @@
     -webkit-text-fill-color: transparent;
   }
   .profile-image {
-    width: auto;
-    height: auto;
-    clip-path: circle();
-    max-width: 30rem;
-    /* image-rendering: -webkit-optimize-contrast; */
+    width: 100%;
+    height: 100%;
+    image-rendering: -webkit-optimize-contrast;
     object-fit: cover;
     object-position: center;
-    position: relative;
-    left: 5.7rem;
   }
   @media screen and (max-width: 639px) {
     #scrollingImage {
