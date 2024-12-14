@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../components/Main.astro";
+import Tweets from "../components/Tweets";
+---
+
+<Layout>
+  <Main>
+    <hr class="-mt-4 mb-10" />
+    <Tweets client:load />
+  </Main>
+</Layout>
