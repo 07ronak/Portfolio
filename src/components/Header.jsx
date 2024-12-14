@@ -94,7 +94,7 @@ const Header = () => {
           </div>
         )}
       </header>
-      <div className="md:hidden h-[22vh]"></div>
+      <div className="md:hidden h-[20vh]"></div>
     </>
   );
 };
