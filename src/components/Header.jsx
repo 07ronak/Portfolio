@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   const navigationLinks = [
-    { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
+    { href: "https://ronakhingonia.vercel.app/#about", label: "About" },
+    { href: "https://ronakhingonia.vercel.app/#projects", label: "Projects" },
     { href: "/daily-tweets", label: "Daily Tweets" },
     {
       href: "https://drive.google.com/file/d/1QdXfM_QBrZD_9O-GFjb_hFzEnZH7BWzn/view?usp=sharing",
@@ -32,7 +32,7 @@ const Header = () => {
         <ul className="md:flex hidden gap-x-8 ml-auto">
           <li>
             <a
-              href="#about"
+              href="https://ronakhingonia.vercel.app/#about"
               className="text-base leading-normal font-normal text-black"
             >
               About
@@ -40,7 +40,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#projects"
+              href="https://ronakhingonia.vercel.app/#projects"
               className="text-base leading-normal font-normal text-black"
             >
               Projects
