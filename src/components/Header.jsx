@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto">
+      <header className="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto md:mt-0 -mt-4">
         <a
           href="https://drive.google.com/file/d/1QdXfM_QBrZD_9O-GFjb_hFzEnZH7BWzn/view?usp=sharing"
           target="_blank"
