@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import Header from "../components/Header.jsx";
 import StylishFooter from "../components/StylishFooter";
 ---
 
@@ -63,7 +63,7 @@ import StylishFooter from "../components/StylishFooter";
     </script>
     <script src="../scroll.js"></script>
   </head>
-  <Header />
+  <Header client:load />
   <slot />
   <StylishFooter client:load />
 </html>

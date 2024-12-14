@@ -62,7 +62,7 @@ const Header = () => {
           aria-label="Toggle Menu"
         >
           {isMenuOpen ? (
-            <X className="w-6 h-6 text-black" />
+            <X size={24} strokeWidth={2} className="w-6 h-6 text-black" />
           ) : (
             <Menu className="w-6 h-6 text-black" />
           )}
@@ -84,7 +84,7 @@ const Header = () => {
                   href={link.href}
                   rel="noopener noreferrer"
                   target={link.target}
-                  className="text-2xl text-black hover:text-gray-600"
+                  className="text-base leading-normal font-normal text-black hover:text-gray-600"
                   onClick={toggleMenu}
                 >
                   {link.label}
@@ -94,7 +94,7 @@ const Header = () => {
           </div>
         )}
       </header>
-      <div className="md:hidden h-[30vh]"></div>
+      <div className="md:hidden h-[24vh]"></div>
     </>
   );
 };
