@@ -20,7 +20,7 @@ export default {
         }, */
       },
       animation: {
-        typing: "typing 2s",
+        typing: "typing 4s",
         /* typingsecond: "typing 2s forwards 2s" // Delays by 2 seconds , */
       },
     },
