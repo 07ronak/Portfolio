@@ -9,6 +9,15 @@ export default {
         roboto: ['"Roboto"', "sans-serif"],
         kalam: ['"Kalam"', "cursive"],
       },
+      keyframes: {
+        typing: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
+      },
+      animation: {
+        typing: "typing 4s",
+      },
     },
   },
   plugins: [],
