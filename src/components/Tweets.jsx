@@ -4,7 +4,12 @@ import { Tweet } from "react-tweet";
 const Tweets = () => {
   return (
     <div className="dark justify-center flex flex-col items-center">
-      <Tweet id="1826328755771773196" />
+      <Tweet id="1868008552172077058" />
+      <Tweet id="1868006525064856014" />
+      <Tweet id="1868005884334624992" />
+      <Tweet id="1868004855803175142" />
+      <Tweet id="1868003522006200367" />
+      {/* <Tweet id="1826328755771773196" />
       <Tweet id="1826327691144167640" />
       <Tweet id="1826327062212477216" />
       <Tweet id="1826324112819753455" />
@@ -40,7 +45,7 @@ const Tweets = () => {
       <Tweet id="1755676322989281316" />
       <Tweet id="1755521761159041264" />
       <Tweet id="1755520569116934431" />
-      <Tweet id="1752789736224407609" />
+      <Tweet id="1752789736224407609" /> */}
     </div>
   );
 };
