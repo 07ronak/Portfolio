@@ -14,9 +14,14 @@ export default {
           "0%": { width: "0" },
           "100%": { width: "100%" },
         },
+        /* typingsecond: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        }, */
       },
       animation: {
-        typing: "typing 4s",
+        typing: "typing 2s",
+        /* typingsecond: "typing 2s forwards 2s" // Delays by 2 seconds , */
       },
     },
   },
