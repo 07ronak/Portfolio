@@ -19,7 +19,7 @@
         </p>
         <p class="mb-2">
           My primary tools of choice includes:
-          <ul class="list-disc pl-5 space-y-5">
+          <ul class="list-disc pl-5 space-y-1">
             <li>JavaScript + DSA</li>
             <li>React</li>
             <li>Astro</li>
@@ -38,8 +38,15 @@
             </li>
             <li>
               <span>Express</span><span class="text-sm text-gray-500 italic">
-                (Elysia)
+                (<!-- //<sup> ly</sup> -->~~ Elysia)
               </span>
+              <a href="https://elysiajs.com/" target="_blank">
+                <img
+                  src="/elysia.svg"
+                  alt="Elysia logo"
+                  class="inline-block w-5 h-5 align-middle"
+                /></a
+              >
             </li>
             <li>MongoDB</li>
             <li>MySQL</li>
@@ -72,8 +79,9 @@
     <hr />
     <p class="mt-4">
       Alongside development, I have a strong interest in Computer & Network
-      Security. Currently revising the online textbook CS 161: Computer
-      Security. Try giving it a visit: <u
+      Security. Currently revising the online textbook <span class="book"
+        >CS 161: Computer Security</span
+      >. Try giving it a visit: <u
         ><a href="https://textbook.cs161.org/">https://textbook.cs161.org/</a
         ></u
       >♥.
@@ -132,6 +140,12 @@
     animation: rotateClockwise 20s linear infinite;
     will-change: transform;
     transform-origin: center;
+  }
+  .book {
+    background-image: linear-gradient(214deg, #ff4500, #ff7300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @keyframes glow {
