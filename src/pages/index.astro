@@ -5,10 +5,12 @@ import Try from "../layouts/try.astro";
 import About from "../components/About.astro";
 import Sample from "../components/Sample.astro";
 import WelcomeMessage from "../components/WelcomeMessage.jsx";
+import Header from "../components/Header.jsx";
 ---
 
 <Layout>
   <WelcomeMessage client:load />
+  <Header client:load />
   <Main>
     <Try />
     <About />

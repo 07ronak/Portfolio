@@ -26,10 +26,6 @@ const WelcomeMessage = () => {
         <span className="relative z-10 inline-block leading-normal font-light animate-typing md:text-3xl text-xl text-black opacity-70 italic overflow-hidden whitespace-nowrap ease-in-out">
           159 million million million, was it?
         </span>
-        {/* <span className="relative z-10 inline-block animate-typing leading-normal font-light text-xl md:text-3xl text-black opacity-70 italic overflow-hidden whitespace-nowrap ease-in-out">
-          <span className="inline-block ">159 million million million,</span>{" "}
-          <span className="md:inline block animate-typingsecond">was it?</span>
-        </span> */}
       </div>
     </div>
   );
