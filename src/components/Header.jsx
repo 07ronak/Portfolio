@@ -33,7 +33,7 @@ const Header = () => {
           <li>
             <a
               href="https://ronakhingonia.vercel.app/#about"
-              className="text-base leading-normal font-normal text-black"
+              className="text-base leading-normal font-normal text-black relative transition-all duration-300 after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 after:absolute after:left-0 after:bottom-[-2px] hover:after:w-full"
             >
               About
             </a>
@@ -41,7 +41,7 @@ const Header = () => {
           <li>
             <a
               href="https://ronakhingonia.vercel.app/#projects"
-              className="text-base leading-normal font-normal text-black"
+              className="text-base leading-normal font-normal text-black relative transition-all duration-300 after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 after:absolute after:left-0 after:bottom-[-2px] hover:after:w-full"
             >
               Projects
             </a>
@@ -49,7 +49,7 @@ const Header = () => {
           <li>
             <a
               href="/daily-tweets"
-              className="text-base leading-normal font-normal text-black"
+              className="text-base leading-normal font-normal text-black relative transition-all duration-300 after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 after:absolute after:left-0 after:bottom-[-2px] hover:after:w-full"
             >
               Daily Tweets
             </a>
