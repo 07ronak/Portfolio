@@ -4,6 +4,7 @@ import { Tweet } from "react-tweet";
 const Tweets = () => {
   return (
     <div className="dark justify-center flex flex-col items-center">
+      <Tweet id="1888179897665048766" />
       <Tweet id="1887795637493907569" />
       <Tweet id="1887387707615420630" />
       <Tweet id="1887067399372877894" />
