@@ -1,3 +1,0 @@
----
-image: ./images/Simon.png
----

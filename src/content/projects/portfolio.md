@@ -1,3 +1,0 @@
----
-image: ./images/Portfolio.png
----
