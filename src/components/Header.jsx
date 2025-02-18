@@ -11,7 +11,11 @@ const Header = () => {
   const navigationLinks = [
     { href: "https://ronakhingonia.vercel.app/#about", label: "About" },
     { href: "https://ronakhingonia.vercel.app/#projects", label: "Projects" },
-    { href: "/daily-tweets", label: "Daily Tweets" },
+    {
+      href: "/daily-tweets",
+      label: "Daily Tweets",
+      needsCustomNavigation: true, // Add this flag for Daily Tweets
+    },
     {
       href: "https://drive.google.com/file/d/1QdXfM_QBrZD_9O-GFjb_hFzEnZH7BWzn/view?usp=sharing",
       label: "My CV",
@@ -48,6 +52,11 @@ const Header = () => {
           </li>
           <li>
             <a
+              onClick={(e) => {
+                e.preventDefault();
+                localStorage.setItem("isNavigating", "true");
+                window.location.href = "/daily-tweets";
+              }}
               href="/daily-tweets"
               className="text-base leading-normal font-normal text-black relative transition-all duration-300 after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 after:absolute after:left-0 after:bottom-[-2px] hover:after:w-full"
             >
@@ -85,7 +94,14 @@ const Header = () => {
                   rel="noopener noreferrer"
                   target={link.target}
                   className="text-base leading-normal font-normal text-black hover:text-gray-600"
-                  onClick={toggleMenu}
+                  onClick={(e) => {
+                    if (link.needsCustomNavigation) {
+                      e.preventDefault();
+                      localStorage.setItem("isNavigating", "true");
+                      window.location.href = link.href;
+                    }
+                    toggleMenu();
+                  }}
                 >
                   {link.label}
                 </a>
