@@ -17,7 +17,7 @@ const Header = () => {
       needsCustomNavigation: true, // Add this flag for Daily Tweets
     },
     {
-      href: "https://drive.google.com/file/d/1QdXfM_QBrZD_9O-GFjb_hFzEnZH7BWzn/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1P6YLzrkxh0dVn11orE5vc1QGbXq2vbmt/view?usp=sharing",
       label: "My CV",
       target: "_blank",
     },
@@ -27,7 +27,7 @@ const Header = () => {
     <>
       <header className="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto md:mt-0 -mt-4">
         <a
-          href="https://drive.google.com/file/d/1QdXfM_QBrZD_9O-GFjb_hFzEnZH7BWzn/view?usp=sharing"
+          href="https://drive.google.com/file/d/1P6YLzrkxh0dVn11orE5vc1QGbXq2vbmt/view?usp=sharing"
           target="_blank"
           className="md:flex hidden items-center h-full px-4 py-2 bg-black text-white text-base leading-normal font-normal rounded-md hover:bg-gray-800 transition-colors duration-300 ml-6"
         >
