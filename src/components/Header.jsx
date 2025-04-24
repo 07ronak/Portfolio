@@ -12,8 +12,9 @@ const Header = () => {
     { href: "https://ronakhingonia.vercel.app/#about", label: "About" },
     { href: "https://ronakhingonia.vercel.app/#projects", label: "Projects" },
     {
-      href: "/daily-tweets",
+      href: "https://x.com/07ronak1",
       label: "Daily Tweets",
+      target: "_blank",
       needsCustomNavigation: true, // Add this flag for Daily Tweets
     },
     {
@@ -52,12 +53,8 @@ const Header = () => {
           </li>
           <li>
             <a
-              onClick={(e) => {
-                e.preventDefault();
-                localStorage.setItem("isNavigating", "true");
-                window.location.href = "/daily-tweets";
-              }}
-              href="/daily-tweets"
+              href="https://x.com/07ronak1"
+              target="_blank"
               className="text-base leading-normal font-normal text-black relative transition-all duration-300 after:content-[''] after:block after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 after:absolute after:left-0 after:bottom-[-2px] hover:after:w-full"
             >
               Daily Tweets
@@ -97,8 +94,7 @@ const Header = () => {
                   onClick={(e) => {
                     if (link.needsCustomNavigation) {
                       e.preventDefault();
-                      localStorage.setItem("isNavigating", "true");
-                      window.location.href = link.href;
+                      window.open(link.href, "_blank");
                     }
                     toggleMenu();
                   }}
