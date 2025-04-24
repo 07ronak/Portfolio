@@ -15,7 +15,6 @@ const Header = () => {
       href: "https://x.com/07ronak1",
       label: "Daily Tweets",
       target: "_blank",
-      needsCustomNavigation: true, // Add this flag for Daily Tweets
     },
     {
       href: "https://drive.google.com/file/d/1P6YLzrkxh0dVn11orE5vc1QGbXq2vbmt/view?usp=sharing",

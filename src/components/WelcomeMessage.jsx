@@ -1,22 +1,12 @@
 import { useState, useEffect } from "react";
 
 const WelcomeMessage = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const isNavigating = localStorage.getItem("isNavigating");
-
-    if (!isNavigating) {
-      setIsVisible(true);
-      const timer = setTimeout(() => setIsVisible(false), 4000);
-      return () => clearTimeout(timer);
-    } else {
-      // Clean up the localStorage
-      localStorage.removeItem("isNavigating");
-    }
+    const timer = setTimeout(() => setIsVisible(false), 4000);
+    return () => clearTimeout(timer);
   }, []);
-
-  if (!isVisible) return null;
 
   return (
     <>
