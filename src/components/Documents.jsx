@@ -17,6 +17,7 @@ const DocumentsSection = () => {
       icon: <Database className="w-6 h-6" />,
       tags: ["System Design", "Architecture", "Scalability"],
       gradient: "from-blue-500 to-cyan-500",
+      tagColor: "bg-sky-700",
     },
     {
       title: "Secure Coding Practices & Tools",
@@ -26,6 +27,7 @@ const DocumentsSection = () => {
       icon: <Shield className="w-6 h-6" />,
       tags: ["Security", "Best Practices", "Tools"],
       gradient: "from-red-500 to-orange-500",
+      tagColor: "bg-red-700",
     },
   ];
 
@@ -78,16 +80,16 @@ const DocumentsSection = () => {
 
             {/* Content */}
             <div className="p-6">
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600 text-sm leading-relaxed mb-5">
                 {doc.description}
               </p>
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-7">
                 {doc.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    className={`px-2 py-1 ${doc.tagColor} text-gray-100 text-xs rounded-full`}
                   >
                     {tag}
                   </span>
@@ -100,14 +102,14 @@ const DocumentsSection = () => {
                   href={`/documents/${doc.filename}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium group-hover:bg-gray-200"
+                  className="flex items-center space-x-2 px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium group-hover:border-gray-500"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>View Document</span>
                 </a>
                 <button
                   onClick={() => handleDownload(doc.filename, doc.title)}
-                  className="flex items-center space-x-2 px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium hover:bg-gray-50"
+                  className="flex items-center space-x-2 px-4 py-2 border border-gray-300 hover:border-gray-500 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium hover:bg-lime-400"
                 >
                   <Download className="w-4 h-4" />
                   <span>Download</span>
@@ -122,7 +124,7 @@ const DocumentsSection = () => {
       </div>
 
       {/* Additional Info */}
-      <div className="mt-10 p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="mt-10 p-4 bg-gradient-to-r  from-gray-200 to-gray-200 rounded-lg border border-gray-200">
         <div className="flex items-start space-x-3">
           <div className="flex-shrink-0">
             <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
