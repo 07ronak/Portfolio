@@ -13,7 +13,11 @@ const DocumentsSection = () => {
       title: "System Design Notes",
       description:
         "Comprehensive notes covering system design principles, scalability patterns, and architectural decisions. Includes real-world examples and best practices for building robust distributed systems.",
-      link: "https://drive.google.com/file/d/1gnyw4H8yGmC_1FTDYflK8NWycyg9y74F/view?usp=sharing",
+      viewLink:
+        "https://drive.google.com/file/d/1gnyw4H8yGmC_1FTDYflK8NWycyg9y74F/view?usp=sharing",
+      downloadLink:
+        // "https://drive.google.com/uc?export=download&id=1gnyw4H8yGmC_1FTDYflK8NWycyg9y74F",
+        "/documents/sd.pdf",
       icon: <Database className="w-6 h-6" />,
       tags: ["System Design", "Architecture", "Scalability"],
       gradient: "from-blue-500 to-cyan-500",
@@ -22,7 +26,11 @@ const DocumentsSection = () => {
       title: "Secure Coding Practices & Tools",
       description:
         "A detailed guide on secure coding practices, common vulnerabilities, and security tools. Essential resource for developers looking to build secure applications and understand cybersecurity principles.",
-      link: "https://drive.google.com/file/d/1NCnSrbXRvb_m2n3XoSSVd-XQnoUSLZwI/view?usp=sharing",
+      viewLink:
+        "https://drive.google.com/file/d/1NCnSrbXRvb_m2n3XoSSVd-XQnoUSLZwI/view?usp=sharing",
+      downloadLink:
+        //"https://drive.google.com/uc?export=download&id=1NCnSrbXRvb_m2n3XoSSVd-XQnoUSLZwI",
+        "/documents/Secure_Coding_Practices_&_Tools.pdf",
       icon: <Shield className="w-6 h-6" />,
       tags: ["Security", "Best Practices", "Tools"],
       gradient: "from-red-500 to-orange-500",
@@ -87,7 +95,7 @@ const DocumentsSection = () => {
               {/* Actions */}
               <div className="flex space-x-3">
                 <a
-                  href={doc.link}
+                  href={doc.viewLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium group-hover:bg-gray-200"
@@ -96,10 +104,7 @@ const DocumentsSection = () => {
                   <span>View Document</span>
                 </a>
                 <a
-                  href={doc.link.replace(
-                    "/view?usp=sharing",
-                    "/export?format=pdf",
-                  )}
+                  href={doc.downloadLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium"
