@@ -12,12 +12,8 @@ const DocumentsSection = () => {
     {
       title: "System Design Notes",
       description:
-        "Comprehensive notes covering system design principles, scalability patterns, and architectural decisions. Includes real-world examples and best practices for building robust distributed systems.",
-      viewLink:
-        "https://drive.google.com/file/d/1gnyw4H8yGmC_1FTDYflK8NWycyg9y74F/view?usp=sharing",
-      downloadLink:
-        // "https://drive.google.com/uc?export=download&id=1gnyw4H8yGmC_1FTDYflK8NWycyg9y74F",
-        "/documents/sd.pdf",
+        "Comprehensive system design notes written in simple, beginner-friendly language. Covers all key concepts including scalability patterns and architectural decisions. Excellent for interview preparation with real-world examples and best practices.",
+      filename: "sd.pdf",
       icon: <Database className="w-6 h-6" />,
       tags: ["System Design", "Architecture", "Scalability"],
       gradient: "from-blue-500 to-cyan-500",
@@ -25,17 +21,23 @@ const DocumentsSection = () => {
     {
       title: "Secure Coding Practices & Tools",
       description:
-        "A detailed guide on secure coding practices, common vulnerabilities, and security tools. Essential resource for developers looking to build secure applications and understand cybersecurity principles.",
-      viewLink:
-        "https://drive.google.com/file/d/1NCnSrbXRvb_m2n3XoSSVd-XQnoUSLZwI/view?usp=sharing",
-      downloadLink:
-        //"https://drive.google.com/uc?export=download&id=1NCnSrbXRvb_m2n3XoSSVd-XQnoUSLZwI",
-        "/documents/Secure_Coding_Practices_&_Tools.pdf",
+        "A practical security handbook featuring 11 categorized vulnerability & prevention strategies. Includes real Express.js code transformations showing insecure vs. secure implementations, plus a curated list of essential open-source security tools every developer should know.",
+      filename: "Secure_Coding_Practices_&_Tools.pdf",
       icon: <Shield className="w-6 h-6" />,
       tags: ["Security", "Best Practices", "Tools"],
       gradient: "from-red-500 to-orange-500",
     },
   ];
+
+  const handleDownload = (filename, title) => {
+    const link = document.createElement("a");
+    link.href = `/documents/${filename}`;
+    link.download = filename;
+    link.setAttribute("download", filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="pr-1 pl-1 mb-24">
@@ -95,7 +97,7 @@ const DocumentsSection = () => {
               {/* Actions */}
               <div className="flex space-x-3">
                 <a
-                  href={doc.viewLink}
+                  href={`/documents/${doc.filename}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium group-hover:bg-gray-200"
@@ -103,15 +105,13 @@ const DocumentsSection = () => {
                   <ExternalLink className="w-4 h-4" />
                   <span>View Document</span>
                 </a>
-                <a
-                  href={doc.downloadLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium"
+                <button
+                  onClick={() => handleDownload(doc.filename, doc.title)}
+                  className="flex items-center space-x-2 px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors duration-200 text-sm font-medium hover:bg-gray-50"
                 >
                   <Download className="w-4 h-4" />
                   <span>Download</span>
-                </a>
+                </button>
               </div>
             </div>
 
@@ -131,7 +131,7 @@ const DocumentsSection = () => {
             <p className="text-sm text-gray-600">
               <span className="font-medium">Note:</span> These documents are
               continuously updated based on new learnings and industry best
-              practices. Last updated: January 2025
+              practices. Last updated: May 2025
             </p>
           </div>
         </div>
