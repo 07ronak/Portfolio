@@ -29,7 +29,7 @@ const DocumentsSection = () => {
     },
   ];
 
-  const handleDownload = (filename, title) => {
+  const handleDownload = (filename) => {
     const link = document.createElement("a");
     link.href = `/documents/${filename}`;
     link.download = filename;
@@ -56,7 +56,7 @@ const DocumentsSection = () => {
       </p>
 
       {/* Documents Grid */}
-      <div className="grid md:grid-cols-2 gap-6 mt-8">
+      <div className="grid md:grid-cols-2 gap-6 mt-10">
         {documents.map((doc, index) => (
           <div
             key={index}
@@ -122,7 +122,7 @@ const DocumentsSection = () => {
       </div>
 
       {/* Additional Info */}
-      <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="mt-10 p-4 bg-gray-50 rounded-lg border border-gray-200">
         <div className="flex items-start space-x-3">
           <div className="flex-shrink-0">
             <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
