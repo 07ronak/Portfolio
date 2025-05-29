@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Code, Trophy, CheckCircle } from "lucide-react";
+import { ExternalLink, Code, Trophy, CheckCircle, Github } from "lucide-react";
 
 const LeetCodeSection = () => {
   const stats = {
@@ -13,9 +13,9 @@ const LeetCodeSection = () => {
   };
 
   // Circle parameters
-  const radius = 85;
+  const radius = 90;
   const circumference = 2 * Math.PI * radius;
-  const strokeWidth = 8;
+  const strokeWidth = 10;
 
   // Calculate angles for each difficulty based on total problems
   const easyAngle = (stats.easy.total / stats.total) * 360;
@@ -151,11 +151,6 @@ const LeetCodeSection = () => {
                 Solved
               </div>
             </div>
-
-            {/* Attempting Badge */}
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-100 px-3 py-1 rounded-full text-xs text-gray-600 border border-gray-200">
-              1 Attempting
-            </div>
           </div>
         </div>
 
@@ -247,22 +242,42 @@ const LeetCodeSection = () => {
                   {stats.solved}
                 </span>
               </div>
+
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600 font-medium">Favorite Topic</span>
+                <span className="text-sm font-semibold text-rose-500">
+                  Dynamic Programming
+                </span>
+              </div>
             </div>
           </div>
 
           {/* Profile Link */}
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="https://leetcode.com/u/QFRMaMOUBJ/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg transition-all duration-200 hover:from-orange-600 hover:to-red-600 hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
+              className="flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg transition-all duration-200 hover:from-orange-600 hover:to-red-600 hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
             >
               <ExternalLink className="w-4 h-4" />
               <span>View LeetCode Profile</span>
             </a>
+
+            <a
+              href="https://github.com/07ronak/JS-DSA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-900 to-black text-white rounded-lg transition-all duration-200 hover:from-gray-900 hover:to-gray-800 hover:shadow-lg transform hover:-translate-y-0.5 font-medium"
+            >
+              <Github className="w-4 h-4" />
+              <span>JavaScript DSA Repository</span>
+            </a>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center mt-6 w-full">
+        <hr className="flex-grow border-gray-300" />
       </div>
     </div>
   );
