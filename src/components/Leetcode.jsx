@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  ExternalLink,
-  Code,
-  Trophy,
-  TrendingUp,
-  CheckCircle,
-} from "lucide-react";
+import { ExternalLink, Code, Trophy, CheckCircle } from "lucide-react";
 
 const LeetCodeSection = () => {
   const stats = {
@@ -18,27 +12,31 @@ const LeetCodeSection = () => {
     submissions: 317,
   };
 
-  // Calculate percentages for the circular progress
-  const totalPercentage = (stats.solved / stats.total) * 100;
-  const easyPercentage = (stats.easy.solved / stats.easy.total) * 100;
-  const mediumPercentage = (stats.medium.solved / stats.medium.total) * 100;
-  const hardPercentage = (stats.hard.solved / stats.hard.total) * 100;
-
   // Circle parameters
   const radius = 85;
   const circumference = 2 * Math.PI * radius;
   const strokeWidth = 8;
 
-  // Calculate stroke dash arrays for each difficulty
-  const easyStrokeDasharray = `${(easyPercentage / 100) * circumference} ${circumference}`;
-  const mediumStrokeDasharray = `${(mediumPercentage / 100) * circumference} ${circumference}`;
-  const hardStrokeDasharray = `${(hardPercentage / 100) * circumference} ${circumference}`;
+  // Calculate angles for each difficulty based on total problems
+  const easyAngle = (stats.easy.total / stats.total) * 360;
+  const mediumAngle = (stats.medium.total / stats.total) * 360;
+  const hardAngle = (stats.hard.total / stats.total) * 360;
+
+  // Calculate stroke dash arrays for background (total problems in each category)
+  const easyBackgroundDash = `${(easyAngle / 360) * circumference} ${circumference}`;
+  const mediumBackgroundDash = `${(mediumAngle / 360) * circumference} ${circumference}`;
+  const hardBackgroundDash = `${(hardAngle / 360) * circumference} ${circumference}`;
+
+  // Calculate stroke dash arrays for solved problems
+  const easySolvedDash = `${(stats.easy.solved / stats.total) * circumference} ${circumference}`;
+  const mediumSolvedDash = `${(stats.medium.solved / stats.total) * circumference} ${circumference}`;
+  const hardSolvedDash = `${(stats.hard.solved / stats.total) * circumference} ${circumference}`;
 
   const CircularProgress = ({
-    percentage,
-    color,
     strokeDasharray,
-    delay = 0,
+    color,
+    opacity = 1,
+    rotation = 0,
   }) => (
     <circle
       cx="100"
@@ -48,13 +46,13 @@ const LeetCodeSection = () => {
       stroke={color}
       strokeWidth={strokeWidth}
       strokeDasharray={strokeDasharray}
-      strokeDashoffset={circumference}
+      strokeDashoffset={0}
       strokeLinecap="round"
+      opacity={opacity}
       className="transition-all duration-1000 ease-out"
       style={{
-        transform: "rotate(-90deg)",
+        transform: `rotate(${rotation - 90}deg)`,
         transformOrigin: "100px 100px",
-        animation: `drawCircle 1.5s ease-out ${delay}s forwards`,
       }}
     />
   );
@@ -91,28 +89,54 @@ const LeetCodeSection = () => {
                 strokeWidth={strokeWidth}
               />
 
-              {/* Easy Progress (Green) */}
+              {/* Background sections for each difficulty (dull colors) */}
+              {/* Easy background (starts at 0 degrees) */}
               <CircularProgress
-                percentage={easyPercentage}
+                strokeDasharray={easyBackgroundDash}
                 color="#10b981"
-                strokeDasharray={easyStrokeDasharray}
-                delay={0.2}
+                opacity={0.3}
+                rotation={0}
               />
 
-              {/* Medium Progress (Orange) */}
+              {/* Medium background (starts after easy section) */}
               <CircularProgress
-                percentage={mediumPercentage}
+                strokeDasharray={mediumBackgroundDash}
                 color="#f59e0b"
-                strokeDasharray={mediumStrokeDasharray}
-                delay={0.4}
+                opacity={0.3}
+                rotation={easyAngle}
               />
 
-              {/* Hard Progress (Red) */}
+              {/* Hard background (starts after easy + medium sections) */}
               <CircularProgress
-                percentage={hardPercentage}
+                strokeDasharray={hardBackgroundDash}
                 color="#ef4444"
-                strokeDasharray={hardStrokeDasharray}
-                delay={0.6}
+                opacity={0.3}
+                rotation={easyAngle + mediumAngle}
+              />
+
+              {/* Solved sections (bright colors) */}
+              {/* Easy solved */}
+              <CircularProgress
+                strokeDasharray={easySolvedDash}
+                color="#10b981"
+                opacity={1}
+                rotation={0}
+              />
+
+              {/* Medium solved */}
+              <CircularProgress
+                strokeDasharray={mediumSolvedDash}
+                color="#f59e0b"
+                opacity={1}
+                rotation={easyAngle}
+              />
+
+              {/* Hard solved */}
+              <CircularProgress
+                strokeDasharray={hardSolvedDash}
+                color="#ef4444"
+                opacity={1}
+                rotation={easyAngle + mediumAngle}
               />
             </svg>
 
@@ -240,43 +264,6 @@ const LeetCodeSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Additional Info */}
-      <div className="mt-10 p-4 bg-gradient-to-r from-gray-200 to-gray-200 rounded-lg border border-gray-200">
-        <div className="flex items-start space-x-3">
-          <div className="flex-shrink-0">
-            <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-          </div>
-          <div>
-            <p className="text-sm text-gray-600">
-              <span className="font-medium">Note:</span> Actively solving
-              problems daily to strengthen algorithmic thinking and
-              problem-solving skills. Focus areas include dynamic programming,
-              graph algorithms, and system design problems.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Closing divider */}
-      <div className="flex items-center justify-center mt-12 w-full">
-        <hr className="flex-grow border-gray-300" />
-        <p className="px-6 text-gray-500 text-sm">
-          Keep coding, keep growing! 🚀
-        </p>
-        <hr className="flex-grow border-gray-300" />
-      </div>
-
-      <style jsx>{`
-        @keyframes drawCircle {
-          from {
-            stroke-dashoffset: ${circumference};
-          }
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-      `}</style>
     </div>
   );
 };
