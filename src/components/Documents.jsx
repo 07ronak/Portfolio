@@ -140,11 +140,7 @@ const DocumentsSection = () => {
       </div>
 
       {/* Closing divider */}
-      <div className="flex items-center justify-center mt-12 w-full">
-        <hr className="flex-grow border-gray-300" />
-        <p className="px-6 text-gray-500 text-sm">
-          More documents coming soon! 🚀
-        </p>
+      <div className="flex items-center justify-center mt-8 w-full">
         <hr className="flex-grow border-gray-300" />
       </div>
     </div>

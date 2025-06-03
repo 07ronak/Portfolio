@@ -1,14 +1,20 @@
 import React from "react";
-import { Heart } from "lucide-react";
+import { Heart, Coffee } from "lucide-react";
 
 const StylishFooter = () => {
   return (
     <footer className="border-t border-gray-300 text-center py-8 mt-16">
       <div className="container mx-auto px-4">
-        <p className="text-lg font-semibold mb-2">
-          Made with &nbsp;
-          <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
-            gulabi dil gulabi dil
+        <p className="text-lg font-semibold flex justify-center items-center gap-2">
+          Made with
+          <span className="flex items-center gap-1 font-bold text-rose-500">
+            <Heart className="w-5 h-5 animate-pulse" />
+            Love
+          </span>
+          and
+          <span className="flex items-center gap-1 font-bold text-[#794028]">
+            <Coffee className="w-5 h-5 animate-bounce" />
+            Coffee
           </span>
         </p>
 
