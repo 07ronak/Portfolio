@@ -38,20 +38,21 @@ const ContactSection = () => {
     <div className=" flex items-center justify-center" id="contact">
       {/* Success Dialog */}
       {isSubmitted && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-xl p-8 max-w-md w-full mx-4 shadow-2xl relative">
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 transition-all">
+          <div className="bg-gradient-to-br from-white via-gray-50 to-blue-50 rounded-lg p-10 max-w-md w-full mx-4 shadow-2xl border border-blue-100 relative animate-fade-in">
             <button
               onClick={() => setIsSubmitted(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              className="absolute top-6 right-6 text-gray-400 hover:text-blue-500 transition-colors"
+              aria-label="Close"
             >
-              <X className="w-5 h-5" />
+              <X className="w-6 h-6" />
             </button>
-            <div className="text-center">
-              <CheckCircle className="w-16 h-16 text-blue-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <CheckCircle className="w-20 h-20 text-blue-500 drop-shadow-lg mb-2" />
+              <h3 className="text-2xl font-semibold text-gray-800 mb-1">
                 Message Sent Successfully!
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-md mb-2">
                 Thank you for reaching out! I'll get back to you as soon as
                 possible.
               </p>
