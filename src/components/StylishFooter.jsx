@@ -3,7 +3,7 @@ import { Heart, Coffee } from "lucide-react";
 
 const StylishFooter = () => {
   return (
-    <footer className="border-t border-gray-300 text-center py-8 mt-16">
+    <footer className="border-t border-gray-300 text-center py-7 mt-11">
       <div className="container mx-auto px-4">
         <p className="text-lg font-semibold flex justify-center items-center gap-2">
           Made with
