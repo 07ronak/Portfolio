@@ -13,9 +13,9 @@ const Header = () => {
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact Me" },
     {
-      href: "https://drive.google.com/file/d/1P6YLzrkxh0dVn11orE5vc1QGbXq2vbmt/view?usp=sharing",
+      href: "/documents/Ronak_Hingonia_MasterCV.pdf", // Local path
       label: "Master CV",
-      target: "_blank",
+      target: "_blank", // Opens in new tab
     },
   ];
 
