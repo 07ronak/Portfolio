@@ -3,13 +3,13 @@ import { ExternalLink, Code, Trophy, CheckCircle, Github } from "lucide-react";
 
 const LeetCodeSection = () => {
   const stats = {
-    solved: 177,
-    total: 3565,
-    easy: { solved: 63, total: 878 },
-    medium: { solved: 95, total: 1849 },
-    hard: { solved: 19, total: 838 },
-    acceptanceRate: 76.34,
-    submissions: 317,
+    solved: 198,
+    total: 3617,
+    easy: { solved: 76, total: 885 },
+    medium: { solved: 103, total: 1881 },
+    hard: { solved: 19, total: 851 },
+    acceptanceRate: 73.83,
+    submissions: 363,
   };
 
   // Circle parameters
@@ -244,7 +244,9 @@ const LeetCodeSection = () => {
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-600 font-medium">Favorite Topic</span>
+                <span className="text-sm text-gray-600 font-medium">
+                  Favorite Topic
+                </span>
                 <span className="text-sm font-semibold text-rose-500">
                   Dynamic Programming
                 </span>
