@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLink } from "lucide-react";
 
 const Projects = () => {
   return (
@@ -13,6 +14,64 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* YouTube Clone */}
+        <div className="rounded overflow-hidden shadow-lg">
+          <a
+            href="https://yt-web-client-368875372157.us-central1.run.app/"
+            target="_blank"
+          >
+            <img
+              className="w-full h-auto object-contain"
+              src="/youtubelogo.svg"
+              alt="YouTube Clone"
+              style={{ aspectRatio: "1895/893" }}
+            />
+          </a>
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2 text-gray-700">
+              YouTube Clone
+            </div>
+            <p className="text-gray-700 text-base mb-6">
+              A serverless video sharing platform built on Google Cloud Platform
+              that enables authenticated users to upload videos, automatically
+              processes them to 360p resolution, and allows public streaming
+              without using YouTube APIs directly.
+            </p>
+            <div className="flex items-center justify-between">
+              <a
+                href="https://github.com/07ronak/YouTube-clone"
+                target="_blank"
+              >
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/15PsML1ijhhbY9Id2rCesrg2cuUyEHCOc/view"
+                target="_blank"
+                className="ml-2 text-sm text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+              >
+                <ExternalLink size={16} />
+                Architecture Dataflow
+              </a>
+            </div>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-black rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #Next.js
+            </span>
+            <span className="inline-block bg-yellow-500 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #Firebase
+            </span>
+            <span className="inline-block bg-blue-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #GCP
+            </span>
+            <span className="inline-block bg-blue-600 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #Docker
+            </span>
+            <span className="inline-block bg-blue-700 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #TypeScript
+            </span>
+          </div>
+        </div>
         {/* GameVault */}
         <div className="rounded overflow-hidden shadow-lg">
           <a href="https://game-vault-jet.vercel.app/" target="_blank">
