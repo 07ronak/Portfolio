@@ -8,12 +8,81 @@ const Projects = () => {
       <div className="flex items-center justify-center mt-12 w-full mb-8">
         <hr className="flex-grow border-gray-300" />
         <h5 className="px-6 text-2xl font-bold tracking-tight text-gray-800">
-          Deployed Projects
+          Personal Projects
         </h5>
         <hr className="flex-grow border-gray-300" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* botCam */}
+        <div className="rounded overflow-hidden shadow-lg">
+          <a href="https://github.com/07ronak/botCam" target="_blank">
+            <img
+              className="w-full h-auto object-cover"
+              src="/botCam.png"
+              alt="botCam"
+              style={{ aspectRatio: "1895/893" }}
+            />
+          </a>
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2 text-gray-700">botCam</div>
+            <p className="text-gray-700 text-base mb-6">
+              <u>Convert your phone camera into a wireless WebCam for PC </u>
+              Engineered using WebRTC over UDP for secure peer-to-peer
+              connection with high-quality video streaming. Features a secure
+              WebSocket signaling server built in Node.js for seamless device
+              discovery and connection setup.
+            </p>
+            <div className="flex items-center justify-between">
+              <a href="https://github.com/07ronak/botCam" target="_blank">
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <div className="flex gap-2 flex-wrap">
+                <a
+                  href="https://drive.google.com/file/d/16SYci-jLbIGVZU8-GxztiMKoBJg4I2H-/view?usp=drive_link"
+                  target="_blank"
+                  className="text-xs text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={12} />
+                  How-To-Use-Guide
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1RpqZlUHNNrSAZe9hBbw8KgeZnfBDCSS9/view?usp=drive_link"
+                  target="_blank"
+                  className="text-xs text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={12} />
+                  Working flow
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1jfcuFZR173rTwtnF3kft4nKyfTsL5R1M/view?usp=sharing"
+                  target="_blank"
+                  className="text-xs text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={12} />
+                  Demo.mp4
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #WebRTC
+            </span>
+            <span className="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #Node.js
+            </span>
+            <span className="inline-block bg-purple-600 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              #WebSocket
+            </span>
+            <span className="inline-block bg-red-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #Google STUN
+            </span>
+            <span className="inline-block bg-indigo-600 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #P2P
+            </span>
+          </div>
+        </div>
         {/* YouTube Clone */}
         <div className="rounded overflow-hidden shadow-lg">
           <a
@@ -135,6 +204,9 @@ const Projects = () => {
             <span className="inline-block bg-yellow-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #javascript
             </span>
+            <span className="inline-block bg-black rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #Search Engine Optimization
+            </span>
           </div>
         </div>
 
@@ -151,7 +223,7 @@ const Projects = () => {
               Airbnb Clone
             </div>
             <p className="text-gray-700 text-base mb-6">
-              A full-stack project that allows users to filter resorts based on
+              A FS project that allows users to filter resorts based on
               prominent features and view details like price and location on an
               interactive map. It uses GraphHopper's geocoding for location
               services and MongoDB Atlas for data storage. Users can log in,
@@ -171,20 +243,17 @@ const Projects = () => {
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #Expessjs
             </span>
-            <span className="inline-block bg-green-500 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Nodejs
-            </span>
             <span className="inline-block bg-lime-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #EJS
             </span>
             <span className="inline-block bg-green-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #MongoDB
             </span>
-            <span className="inline-block bg-red-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #ORM
-            </span>
             <span className="inline-block bg-yellow-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #javascript
+            </span>
+            <span className="inline-block bg-red-500 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              #MAP
             </span>
           </div>
         </div>
