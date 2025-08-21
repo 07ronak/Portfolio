@@ -39,6 +39,14 @@ const Projects = () => {
               </a>
               <div className="flex gap-2 flex-wrap">
                 <a
+                  href="https://drive.google.com/file/d/1jfcuFZR173rTwtnF3kft4nKyfTsL5R1M/view?usp=sharing"
+                  target="_blank"
+                  className="text-xs text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={12} />
+                  Demo.mp4
+                </a>
+                <a
                   href="https://drive.google.com/file/d/16SYci-jLbIGVZU8-GxztiMKoBJg4I2H-/view?usp=drive_link"
                   target="_blank"
                   className="text-xs text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
@@ -53,14 +61,6 @@ const Projects = () => {
                 >
                   <ExternalLink size={12} />
                   Working flow
-                </a>
-                <a
-                  href="https://drive.google.com/file/d/1jfcuFZR173rTwtnF3kft4nKyfTsL5R1M/view?usp=sharing"
-                  target="_blank"
-                  className="text-xs text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
-                >
-                  <ExternalLink size={12} />
-                  Demo.mp4
                 </a>
               </div>
             </div>
