@@ -113,14 +113,24 @@ const Projects = () => {
               >
                 <i className="fa-brands fa-github text-3xl"></i>
               </a>
-              <a
-                href="https://drive.google.com/file/d/15PsML1ijhhbY9Id2rCesrg2cuUyEHCOc/view"
-                target="_blank"
-                className="ml-2 text-sm text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
-              >
-                <ExternalLink size={16} />
-                Architecture Dataflow
-              </a>
+              <div className="flex gap-2">
+                <a
+                  href="https://drive.google.com/file/d/15PsML1ijhhbY9Id2rCesrg2cuUyEHCOc/view"
+                  target="_blank"
+                  className="ml-2 text-sm text-gray-500 italic border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={16} />
+                  Architecture Dataflow
+                </a>
+                <a
+                  href="https://yt-web-client-368875372157.us-central1.run.app/"
+                  target="_blank"
+                  className="ml-2 text-sm text-gray-500 border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={16} />
+                  Live Demo
+                </a>
+              </div>
             </div>
           </div>
           <div className="px-6 pt-4 pb-2">
@@ -159,9 +169,19 @@ const Projects = () => {
               information. Built with the RAWG.io API, the platform offers
               advanced filtering options to sort games by various criteria.
             </p>
-            <a href="https://github.com/07ronak/Game-Vault" target="_blank">
-              <i className="fa-brands fa-github text-3xl"></i>
-            </a>
+            <div className="flex items-center justify-between">
+              <a href="https://github.com/07ronak/Game-Vault" target="_blank">
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <a
+                href="https://game-vault-jet.vercel.app/"
+                target="_blank"
+                className="ml-2 text-sm text-gray-500 border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
+            </div>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-[#61DBFB] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
@@ -190,9 +210,15 @@ const Projects = () => {
               for web development, recently deployed projects, and seamless
               access to my social media links.
             </p>
-            <a href="https://github.com/07ronak/Portfolio" target="_blank">
-              <i className="fa-brands fa-github text-3xl"></i>
-            </a>
+            <div className="flex items-center justify-between">
+              <a href="https://github.com/07ronak/Portfolio" target="_blank">
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <span className="ml-2 text-sm text-green-600 italic border border-green-600 px-2 py-1 rounded flex items-center gap-1">
+                <ExternalLink size={16} />
+                You are already here :)
+              </span>
+            </div>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-[#F4911E] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
@@ -234,9 +260,19 @@ const Projects = () => {
               <a href="https://github.com/07ronak/AirBNB-Clone" target="_blank">
                 <i className="fa-brands fa-github text-3xl"></i>
               </a>
-              <span className="ml-2 text-sm text-gray-500 italic border border-gray-400 px-2 py-1 rounded">
-                Note: link may take a few moments to load
-              </span>
+              <div className="flex gap-1">
+                <span className="ml-2 text-sm text-gray-500 italic border border-gray-400 px-2 py-1 rounded">
+                  Note: link may take a few moments to load
+                </span>
+                <a
+                  href="https://airbnb-clone-1-za17.onrender.com/listing"
+                  target="_blank"
+                  className="ml-2 text-sm text-gray-500 border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+                >
+                  <ExternalLink size={16} />
+                  Live Demo
+                </a>
+              </div>
             </div>
           </div>
           <div className="px-6 pt-4 pb-2">
@@ -252,8 +288,8 @@ const Projects = () => {
             <span className="inline-block bg-yellow-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #javascript
             </span>
-            <span className="inline-block bg-red-500 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
-              #MAP
+            <span className="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #MAP Services
             </span>
           </div>
         </div>
@@ -273,13 +309,23 @@ const Projects = () => {
               offers offline functionality and is deployed on Firebase for
               seamless access and performance.
             </p>
-            <a
-              className="ml-auto"
-              href="https://github.com/07ronak/MemoryGame1"
-              target="_blank"
-            >
-              <i className="fa-brands fa-github text-3xl"></i>
-            </a>
+            <div className="flex items-center justify-between">
+              <a
+                className=""
+                href="https://github.com/07ronak/MemoryGame1"
+                target="_blank"
+              >
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <a
+                href="https://memento-edd64.web.app/"
+                target="_blank"
+                className="ml-2 text-sm text-gray-500 border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
+            </div>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-[#61DBFB] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
@@ -319,12 +365,22 @@ const Projects = () => {
               longer, and you must remember all the previous cards plus the new
               one.
             </p>
-            <a
-              href="https://github.com/07ronak/Simon-Says-Game"
-              target="_blank"
-            >
-              <i className="fa-brands fa-github text-3xl"></i>
-            </a>
+            <div className="flex items-center justify-between">
+              <a
+                href="https://github.com/07ronak/Simon-Says-Game"
+                target="_blank"
+              >
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <a
+                href="https://simon-says-game-ecru-alpha.vercel.app/"
+                target="_blank"
+                className="ml-2 text-sm text-gray-500 border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
+            </div>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-yellow-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
