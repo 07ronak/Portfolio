@@ -14,6 +14,59 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* Book It */}
+        <div className="rounded overflow-hidden shadow-lg">
+          <a
+            href="https://book-it-pearl-ten.vercel.app/experiences"
+            target="_blank"
+          >
+            <img className="w-full" src="/bookit.png" alt="bookit image" />
+          </a>
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2 text-gray-700">Book It</div>
+            <p className="text-gray-700 text-base mb-6">
+              A Production-Grade Full Stack experience booking application with
+              secure payment flow, real-time availability tracking, and promo
+              code support.
+            </p>
+            <div className="flex items-center justify-between">
+              <a href="https://github.com/07ronak/Game-Vault" target="_blank">
+                <i className="fa-brands fa-github text-3xl"></i>
+              </a>
+              <a
+                href="https://book-it-pearl-ten.vercel.app/experiences"
+                target="_blank"
+                className="ml-2 text-sm text-gray-500 border border-gray-400 px-2 py-1 rounded flex items-center gap-1"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-black rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #Next.js
+            </span>
+            <span className="inline-block bg-blue-700 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #TypeScript
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #Node + Express.js
+            </span>
+            <span className="inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #tailwind
+            </span>
+            <span className="inline-block bg-[#00E599] rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              #Neon.tech
+            </span>
+            <span className="inline-block bg-[#336791] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+              #Postgres
+            </span>
+            <span className="inline-block bg-[#2D3748] rounded-full px-3 py-1 text-sm font-semibold text-[#56BFA1] mr-2 mb-2">
+              #Prisma
+            </span>
+          </div>
+        </div>
         {/* botCam */}
         <div className="rounded overflow-hidden shadow-lg">
           <a href="https://github.com/07ronak/botCam" target="_blank">
