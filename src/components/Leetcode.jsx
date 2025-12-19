@@ -5,8 +5,8 @@ const LeetCodeSection = () => {
   const stats = {
     easy: { solved: 102, total: 917 },
     medium: { solved: 132, total: 1969 },
-    hard: { solved: 26, total: 892 },
-    acceptanceRate: 70.67,
+    hard: { solved: 27, total: 892 },
+    acceptanceRate: 70.53,
     submissions: 641,
   };
 
