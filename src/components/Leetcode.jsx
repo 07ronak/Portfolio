@@ -7,7 +7,7 @@ const LeetCodeSection = () => {
     medium: { solved: 142, total: 1978 },
     hard: { solved: 32, total: 896 },
     acceptanceRate: 71.48,
-    submissions: 768,
+    submissions: 769,
   };
 
   // Add calculated totals
