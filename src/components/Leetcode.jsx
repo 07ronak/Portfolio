@@ -5,9 +5,9 @@ const LeetCodeSection = () => {
   const stats = {
     easy: { solved: 127, total: 924 },
     medium: { solved: 165, total: 2002 },
-    hard: { solved: 42, total: 905 },
-    acceptanceRate: 71.24,
-    submissions: 1071,
+    hard: { solved: 43, total: 906 },
+    acceptanceRate: 71.26,
+    submissions: 1082,
   };
 
   // Add calculated totals
