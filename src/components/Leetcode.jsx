@@ -3,11 +3,11 @@ import { ExternalLink, Code, Trophy, CheckCircle, Github } from "lucide-react";
 
 const LeetCodeSection = () => {
   const stats = {
-    easy: { solved: 164, total: 933 },
-    medium: { solved: 201, total: 2029},
+    easy: { solved: 165, total: 933 },
+    medium: { solved: 204, total: 2030},
     hard: { solved: 51, total: 916 },
-    acceptanceRate: 72.54,  
-    submissions: 1657,
+    acceptanceRate: 72.58,  
+    submissions: 1696,
   };
 
   // Add calculated totals
