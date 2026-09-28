@@ -52,7 +52,7 @@ const DocumentsSection = () => {
         <hr className="flex-grow border-gray-300" />
       </div>
 
-      <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+      <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
         Here are some comprehensive documents I've created to share my knowledge
         and insights. Feel free to explore and learn from them! 📖
       </p>
