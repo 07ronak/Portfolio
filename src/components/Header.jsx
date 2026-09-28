@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-end items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto md:mt-0 -mt-4">
+      <header className="flex justify-end items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto md:mt-0 -mt-4 -mb-4">
         {/* Desktop Navigation */}
         <nav className="md:flex hidden">
           <ul className="flex gap-x-8">

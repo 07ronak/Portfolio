@@ -133,7 +133,7 @@ const DocumentsSection = () => {
             <p className="text-sm text-gray-600">
               <span className="font-medium">Note:</span> These documents are
               continuously updated based on new learnings and industry best
-              practices. Last updated: May 2025
+              practices.
             </p>
           </div>
         </div>
