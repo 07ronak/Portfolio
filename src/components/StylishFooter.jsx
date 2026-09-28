@@ -19,7 +19,7 @@ const StylishFooter = () => {
         </p>
 
         <p className="text-sm text-gray-600 mt-4">
-          © 2025 Ronak Hingonia. All rights reserved.
+          © 2026 Ronak Hingonia. All rights reserved.
         </p>
       </div>
     </footer>
