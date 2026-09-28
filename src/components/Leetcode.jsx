@@ -1,7 +1,7 @@
 import { ExternalLink, Code, Trophy, CheckCircle, Github } from "lucide-react";
 
 // Number of screenshots in public/ss (1.png, 2.png, ...)
-const SS_COUNT = 16;
+const SS_COUNT = 17;
 // Reel speed: seconds each image takes to pass by (higher = slower)
 const SECONDS_PER_IMAGE = 8;
 
