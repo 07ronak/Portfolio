@@ -47,11 +47,11 @@ const Reel = () => (
 
 const LeetCodeSection = () => {
   const stats = {
-    easy: { solved: 274, total: 966 },
-    medium: { solved: 427, total: 2117 },
-    hard: { solved: 135, total: 977 },
-    acceptanceRate: 74.63,
-    submissions: 3600,
+    easy: { solved: 276, total: 968 },
+    medium: { solved: 429, total: 2121 },
+    hard: { solved: 136, total: 979 },
+    acceptanceRate: 74.67,
+    submissions: 3613,
   };
 
   stats.solved = stats.easy.solved + stats.medium.solved + stats.hard.solved;
