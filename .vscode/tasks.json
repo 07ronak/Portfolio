@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Development server",
+      "type": "shell",
+      "command": "bun run dev",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build portfolio",
+      "type": "shell",
+      "command": "bun run build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

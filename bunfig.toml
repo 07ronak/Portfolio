@@ -1,0 +1,3 @@
+[run]
+# Run package CLIs with Bun, including those with a Node.js shebang.
+bun = true
